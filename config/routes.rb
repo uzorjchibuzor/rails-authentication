@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
+  
+  get    '/signin',   to: 'sessions#new'
+  post   '/signin',   to: 'sessions#create'
   resources :sessions
 end
