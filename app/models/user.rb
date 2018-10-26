@@ -1,5 +1,6 @@
 class User < ApplicationRecord
- before_create :remember_token   
+ before_create :remember_token  
+ has_many :posts 
  has_secure_password
 
  # Returns a random token.

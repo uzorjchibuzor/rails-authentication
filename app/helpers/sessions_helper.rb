@@ -21,8 +21,8 @@ module SessionsHelper
 
   # Returns true if User is signed in
 
-  def signed_in?(user)
-   return user.id == session[:user_id]
+  def signed_in?
+    !current_user.nil?
   end
 
 
