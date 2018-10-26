@@ -25,7 +25,11 @@ module SessionsHelper
     !current_user.nil?
   end
 
-
+  # Signs out a signed inuser
+def sign_out
+  session.delete(:user_id)
+  @current_user = nil
+end
   # Returns the user corresponding to the remember token cookie.
   def current_user
     if (user_id = session[:user_id])

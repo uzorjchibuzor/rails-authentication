@@ -2,24 +2,24 @@
 <h1>Posts</h1>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-8 col-md-offset-2">
  
     <% @posts.each do |post| %>
      <div class="inner-posts">
     <% if signed_in? %>
-        <p>
+        <p class="author">
       <%= post.user.name %>
       </p>
     <% else %>
-        <p>
-        Login to see the author
+    <p class="author">
+        Sign In to see the author
         </p>
     <% end %>
-     <p>
+     <p class="title">
       <%= post.title %>
       </p>
 
-      <p>
+      <p class="content">
       <%= post.content %> 
       </p>
     </div>
