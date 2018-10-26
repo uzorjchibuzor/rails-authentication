@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
   
    if @user && @user.authenticate(params[:session][:password])
     sign_in(@user)
+    flash[:success] = "Signed In Successfully"
     redirect_to posts_index_path
    else 
     render :new
@@ -18,6 +19,7 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out if signed_in?
+    flash[:success] = "Signed Out Successfully"
     redirect_to root_url
   end
 

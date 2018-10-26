@@ -30,3 +30,24 @@ header+
 
 }
 
+.form-control {
+    margin-bottom: 20px;
+}
+
+// Field with Errors
+
+.field_with_errors > label {
+    color:red;
+}
+
+#error_explanation {
+    
+    h2 {
+        font-size: 16px;
+    }
+
+    ul {
+        color: red;
+    }
+}
+
