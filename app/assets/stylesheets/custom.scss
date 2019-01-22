@@ -1,0 +1,53 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header{
+    margin-bottom: 20px;
+}
+header+
+.container{
+    margin-top: 80px;
+}
+.inner-posts{
+    width: 100%;
+    background-color: #999999;
+    .title{
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .author{
+        background-color: #000;
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .content{
+      font-size: 14px;
+      padding: 10px;
+    }
+
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+// Field with Errors
+
+.field_with_errors > label {
+    color:red;
+}
+
+#error_explanation {
+    
+    h2 {
+        font-size: 16px;
+    }
+
+    ul {
+        color: red;
+    }
+}
+
