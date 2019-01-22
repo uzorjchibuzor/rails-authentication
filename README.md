@@ -1,24 +1,15 @@
-# README
+# Rails Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Project is used to demonstrate Access control in Rails
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+* Ruby version - 2.6
 
-* Configuration
+* Rails Version - 5.2.1
 
-* Database creation
+* After cloning the repository, run `rails db:migrate`  then run `rails server`
 
-* Database initialization
+* The app is served at `localhost:3000`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* To create a User account from the console, run `User.create(name: '<name>', email: '<email>', password: '<password>')`
